@@ -12,7 +12,7 @@ export async function submitContactForm(formData) {
     });
     return await res.json();
   } catch (err) {
-    console.error("❌ Contact form error:", err);
+    console.error("Contact form error:", err);
     return { error: "Network error, please try again later" };
   }
 }
