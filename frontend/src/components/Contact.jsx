@@ -26,14 +26,14 @@ export default function Contact() {
       );
 
       if (result.text === 'OK') {
-        setStatus('✅ Message sent!');
+        setStatus(' Message sent!');
         setForm({ user_name: '', user_email: '', message: '' });
       } else {
-        setStatus('❌ Something went wrong, please try again.');
+        setStatus('Something went wrong, please try again.');
       }
     } catch (error) {
       console.error(error);
-      setStatus('❌ Failed to send message');
+      setStatus('Failed to send message');
     }
   };
 
