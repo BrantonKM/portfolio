@@ -12,7 +12,7 @@ app.use(cors());           // allow all origins in dev
 app.use(express.json());   // parse JSON
 
 // Health check
-app.get('/', (_req, res) => res.send('Backend API is running ✅'));
+app.get('/', (_req, res) => res.send('Backend API is running '));
 
 // Contact endpoint
 app.post('/api/contact', async (req, res) => {
@@ -33,4 +33,4 @@ app.post('/api/contact', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
